@@ -47,7 +47,7 @@ def standard_environment():
     # @ @ @ 1
     # @ X @ -1
     # S @ @ @
-    g = Environment(3, 4, (0, 2))
+    g = Environment(3, 4, (2, 0))
     rewards = {
         (0, 3): 1,
         (1, 3): -1
@@ -81,3 +81,4 @@ def negative_environment(step_cost=-0.1):
         (2, 3): step_cost
     })
     return g
+

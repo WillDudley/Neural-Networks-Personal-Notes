@@ -1,5 +1,5 @@
 import numpy as np
-from Gridworld_in_Code import standard_environment
+from Gridworld_in_code import standard_environment
 
 
 def print_values(V, g):
@@ -105,6 +105,6 @@ if __name__ == '__main__':
 
         if biggest_change < 0.001:  # threshold for convergence
             break
-    print('\nValues for uniformly random actions:', end='')
+    print('\nValues for deterministic actions:', end='')
     print_values(V, env)
     print('\n')
